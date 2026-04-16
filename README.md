@@ -2,7 +2,7 @@
 
 SteaMidra helps you set up games to work with Steam using Lua scripts, manifests, and GreenLuma. It writes the right files into your Steam folder so games and DLC can run. It does not replace or crack Steam itself.
 
-# Educational use only. Use at your own risk.
+## Educational use only. Use at your own risk.
 
 *Made by Midrag and his brother!*
 
