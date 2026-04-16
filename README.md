@@ -8,7 +8,7 @@ SteaMidra helps you set up games to work with Steam using Lua scripts, manifests
 Need help? Chat with us on our discord server: https://discord.gg/hwUqSfMEVa
 
 
-## What SteaMidra can do
+## Features
 - Download and use Lua files for games, download manifests, and set up GreenLuma.  
 - Write Lua and manifest data into Steam's config so games work with or without an extra injector.  
 - Other features: multiplayer fixes (online-fix.me), **game fixes/bypasses (Ryuu)**, DLC status check, cracking (gbe_fork), SteamStub DRM removal (Steamless), AppList management, and DLC Unlockers (CreamInstaller-style: SmokeAPI, CreamAPI, Koaloader, Uplay).  
