@@ -118,5 +118,3 @@ See [CHANGELOG.md](CHANGELOG.md) for what changed in the latest update.
 **RedPaper** – Credit to RedPaper for the Broken Moon MIDI cover, originally arranged by U2 Akiyama and used in Touhou 7.5: Immaterial and Missing Power. Touhou 7.5 and its assets are owned by Team Shanghai Alice and Twilight Frontier. SteaMidra is not affiliated with or endorsed by either party. All trademarks belong to their respective owners.
 
 SteaMidra is licensed under the GNU General Public License v3.0 (see LICENSE file).
-
-Use at your own risk. For educational purposes only.
