@@ -4,6 +4,8 @@ SteaMidra helps you set up games to work with Steam using Lua scripts, manifests
 
 ## Educational use only. Use at your own risk.
 
+*Made by Midrag and his brother!*
+
 Need help? Chat with us on our discord server: https://discord.gg/hwUqSfMEVa
 
 
