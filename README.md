@@ -7,13 +7,11 @@
 
 "Made" by Midrag and his brother!
 
-Quick thing before we start remember to exclude the SteaMidra folder from Windows Security or at least the folder in this path for Creaminstaller Resources to work! `sff\dlc_unlockers\resources`
-
 SteaMidra helps you set up games to work with Steam using Lua scripts, manifests, and GreenLuma. It writes the right files into your Steam folder so games and DLC can run. It does not replace or crack Steam itself.
 
-**Need help?** Check the [documentation](docs/README.md) or join our Discord Server.
+**Need help?** Check the [documentation](docs/README.md) or join our Discord Server (link above).
 
-**Small video about SteaMidra:** [Youtube Tutorial](https://youtu.be/cFfItiV8-pk)
+**Small video about SteaMidra:** Soon
 
 ---
 
