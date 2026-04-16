@@ -72,22 +72,6 @@ See [CHANGELOG.md](CHANGELOG.md) for what changed in the latest update.
 [DLC Unlockers](docs/dlc_unlockers/README.md) – Using DLC unlockers (CreamInstaller-style).
 
 
-## Troubleshooting
-
-**Steam says "No Internet Connection" when downloading** — SteaMidra handles this automatically.
-
-1. **Workshop ACF fix** — The most common cause is orphaned workshop items in `appworkshop_{id}.acf` triggering a failed Workshop update. SteaMidra patches this file to clear `NeedsDownload` when no workshop content is installed.
-2. **Manifest seeding** — When you process a .lua file or use "Update all manifests", manifests are written directly to Steam's `depotcache` folder before Steam starts. Steam finds them locally.
-3. **ACF error state** — SteaMidra clears stale `UpdateResult` and validation flags in the game ACF so Steam doesn't get stuck in a retry loop.
-
-**Dependency conflicts / urllib3 error** — Run both install commands from Step 1 above (requirements.txt first, then `pip install steam==1.4.4 --no-deps`). If conflicts persist with other projects on your system, use a virtual environment.
-
-**ModuleNotFoundError** — Dependencies are not installed. Run `pip install -r requirements.txt`.
-
-**Remove SteamStub (Steamless) → WinError 2** — In the GUI, clicking "Remove SteamStub" now opens a file picker. Just navigate to your game folder and select the `.exe` yourself — no Steam API lookup needed.
-
-**SteamAutoCrack not found** — Make sure the SteaMidra folder is intact and hasn't had any files deleted. SteamAutoCrack is bundled in `third_party/SteamAutoCrack/cli/` and should already be there.
-
 
 ## Credits
 
