@@ -32,7 +32,7 @@ Extract `NormalModePatch.rar` and put all files from this folder in your `SteaMi
 
 ### Step 3: Setup Greenluma
 Go into the Greenluma folder and execute `GreenLumaSettings2025.exe`.
-Then type 2 in the terminal and press Enter and set full `steam.exe` (Default: `C:\Program Files (x86)\Steam\steam.exe`) and `GreenLuma_2025_x64.dll` (Default: `anyfolder\Greenluma\GreenLuma_2025_x64.dll`) path.
+Then type 2 in the terminal and press Enter and set full `steam.exe` (Default: `C:\Program Files (x86)\Steam\steam.exe`) and `GreenLuma_2025_x64.dll` (Default: `SteamMidra\Greenluma\GreenLuma_2025_x64.dll`) path.
 
 ---
 
