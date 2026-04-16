@@ -19,7 +19,7 @@ Create an folder anywhere and name it `SteaMidra` and put the `SteaMidra_GUI.exe
 
 ### Step 2: Greenluma
 
-Download the latest Greenluma patched version [here](https://catbox.moe).
+Download the latest Greenluma patched version [here](https://www.up-4ever.net/lyoi96gger8y).
 Extract the ZIP and you will see three folders. In this case we only need `NormalModePatch.rar`.
 Extract `NormalModePatch.rar` and put all files from this folder in your `SteaMidra\Greenluma` folder.
 
