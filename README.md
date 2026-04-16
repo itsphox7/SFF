@@ -5,13 +5,11 @@
 
 # SteaMidra (Education purposes only)
 
-"Made" by Midrag and his brother!
-
 SteaMidra helps you set up games to work with Steam using Lua scripts, manifests, and GreenLuma. It writes the right files into your Steam folder so games and DLC can run. It does not replace or crack Steam itself.
 
-**Need help?** Check the [documentation](docs/README.md) or join our Discord Server (link above).
-
 **Tutorial Video about SteaMidra:** Soon
+
+*"Made" by Midrag and his brother!*
 
 ---
 
