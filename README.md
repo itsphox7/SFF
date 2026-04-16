@@ -9,7 +9,7 @@ SteaMidra helps you set up games to work with Steam using Lua scripts, manifests
 
 **Tutorial Video about SteaMidra:** Soon
 
-*"Made" by Midrag and his brother!*
+*Made by Midrag and his brother!*
 
 ---
 
