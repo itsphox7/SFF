@@ -15,6 +15,17 @@ SteaMidra helps you set up games to work with Steam using Lua scripts, manifests
 
 **Small video about SteaMidra:** [Youtube Tutorial](https://youtu.be/cFfItiV8-pk)
 
+---
+
+## What SteaMidra can do
+
+- Download and use Lua files for games, download manifests, and set up GreenLuma.  
+- Write Lua and manifest data into Steam's config so games work with or without an extra injector.  
+- Other features: multiplayer fixes (online-fix.me), **game fixes/bypasses (Ryuu)**, DLC status check, cracking (gbe_fork), SteamStub DRM removal (Steamless), AppList management, and DLC Unlockers (CreamInstaller-style: SmokeAPI, CreamAPI, Koaloader, Uplay).  
+- **Multi-language GUI** — English and Portuguese built-in; add more via `sff/locales/`.
+- Parallel downloads, backups, recent files, and settings export/import.
+
+---
 
 ## Quick start
 
@@ -35,14 +46,6 @@ Go into the Greenluma folder and execute `GreenLumaSettings2025.exe`.
 Then type 2 in the terminal and press Enter and set full `steam.exe` (Default: `C:\Program Files (x86)\Steam\steam.exe`) and `GreenLuma_2025_x64.dll` (Default: `SteamMidra\Greenluma\GreenLuma_2025_x64.dll`) path.
 
 ---
-
-## What SteaMidra can do
-
-- Download and use Lua files for games, download manifests, and set up GreenLuma.  
-- Write Lua and manifest data into Steam's config so games work with or without an extra injector.  
-- Other features: multiplayer fixes (online-fix.me), **game fixes/bypasses (Ryuu)**, DLC status check, cracking (gbe_fork), SteamStub DRM removal (Steamless), AppList management, and DLC Unlockers (CreamInstaller-style: SmokeAPI, CreamAPI, Koaloader, Uplay).  
-- **Multi-language GUI** — English and Portuguese built-in; add more via `sff/locales/`.
-- Parallel downloads, backups, recent files, and settings export/import.
 
 ### AppList profiles (GreenLuma limit workaround)
 
