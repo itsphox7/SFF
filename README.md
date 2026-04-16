@@ -1,14 +1,5 @@
-# ⚠️ Important Update!
 
-# If you use the normal mode patch of GL then you do not have to downgrade steam!!!
-
-Steam has updated and if you accidentally update your Steam client to a version after **10/03/2026** then GreenLuma won't work! Use this command to revert your Steam version:
-
-```
-"C:\Program Files (x86)\Steam\steam.exe" -forcesteamupdate -forcepackagedownload -overridepackageurl http://web.archive.org/web/20260122074724if_/media.steampowered.com/client -exitsteam
-```
-
-Just so people know online-fix has updated their site and it is very annoying when they do that, since multiplayer fix is not working no more as it did before. Use Bypass/fix option instead it should have all the needed files etc for multiplayer and fixes for games.
+[![](https://dcbadge.limes.pink/api/server/https://discord.gg/hwUqSfMEVa)](https://discord.gg/hwUqSfMEVa)
 
 ---
 
@@ -20,89 +11,30 @@ Quick thing before we start remember to exclude the SteaMidra folder from Window
 
 SteaMidra helps you set up games to work with Steam using Lua scripts, manifests, and GreenLuma. It writes the right files into your Steam folder so games and DLC can run. It does not replace or crack Steam itself.
 
-**Need help?** Check the [documentation](docs/README.md) or reach out to me Merium0 on the Discord and we'll sort it out. Discord server: https://discord.gg/yp3UA6QdBC
+**Need help?** Check the [documentation](docs/README.md) or join our Discord Server.
 
 **Small video about SteaMidra:** [Youtube Tutorial](https://youtu.be/cFfItiV8-pk)
 
 
-## I'm too lazy to edit the readme.md file not, but just so people know the release got exe file now so there is no need to do all these steps under, unless you want too though.
-
-
 ## Quick start
 
-### Step 1: Install dependencies
+### Step 1: SteaMidra
 
-**Two commands are required** (steam has a stale `urllib3<2` constraint that conflicts with Selenium; `--no-deps` bypasses it — steam works fine at runtime with urllib3 2.x):
+Download the latest version from [here](https://github.com/Midrags/SFF/releases/latest).
+Create an folder anywhere and name it `SteaMidra` and put the `SteaMidra_GUI.exe` and `SteamKillInject.exe` in this folder.
 
-```batch
-pip install -r requirements.txt
-pip install steam==1.4.4 --no-deps
+### Step 2: Greenluma
 
-Also run the install_online_fix_requirements.bat
-```
+Download the latest Greenluma patched version [here](https://catbox.moe).
+Extract the ZIP and you will see three folders. In this case we only need `NormalModePatch.rar`.
+Extract `NormalModePatch.rar` and put all files from this folder in your `SteaMidra\Greenluma` folder.
 
-If you get dependency conflicts with other projects on your system, use a virtual environment:
 
-```batch
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-pip install steam==1.4.4 --no-deps
+### Step 3: Setup Greenluma
+Go into the Greenluma folder and execute `GreenLumaSettings2025.exe`.
+Then type 2 in the terminal and press Enter and set full `steam.exe` (Default: `C:\Program Files (x86)\Steam\steam.exe`) and `GreenLuma_2025_x64.dll` (Default: `anyfolder\Greenluma\GreenLuma_2025_x64.dll`) path.
 
-Also run the install_online_fix_requirements.bat
-```
-
-### Step 2: Run SteaMidra
-
-**With Python:**
-- CLI: `python Main.py`
-- GUI: `python Main_gui.py`
-
-**With the EXE:**
-- CLI: Run `build_simple.bat`, then run `SteaMidra.exe` (administrator preferred).
-- GUI: Run both install commands from Step 1, then `build_simple_gui.bat`, then run `SteaMidra_GUI.exe`.
-
-### Step 3: GreenLuma
-
-Download GreenLuma and set it up: https://www.up-4ever.net/lyoi96gger8y
-
-Extract the ZIP and use the AppList folder from GreenLuma when SteaMidra asks for it. Full steps are in the [Setup Guide](docs/SETUP_GUIDE.md).
-
-**Optional:** Windows desktop notifications: `pip install -r requirements-optional.txt`
-
-## GUI Version
-
-SteaMidra has a full graphical interface.
-
-**Run with Python:** `python Main_gui.py`
-
-**Build the GUI EXE:**
-1. Install dependencies (two commands — both required):
-   ```batch
-   pip install -r requirements.txt
-   pip install steam==1.4.4 --no-deps
-   ```
-2. Run `build_simple_gui.bat`
-3. Run `dist\SteaMidra_GUI.exe`
-
-**What the GUI gives you:**  
-- **Tabbed interface** — Main, Store, Downloads, Fix Game, Tools, and Cloud Saves tabs.  
-- Pick your game from a dropdown (all Steam libraries scanned) or set a path for games outside Steam.  
-- All actions as buttons: crack, DRM removal, DLC check, workshop items, multiplayer fix, **Fixes/Bypasses (Ryuu)**, DLC unlockers, and more.  
-- **Store browser** — search and browse the Hubcap Manifest library with pagination.  
-- **Fix Game pipeline** — automate emulator application (Goldberg, ColdClient, ColdLoader) with SteamStub unpacking.  
-- **GBE Token Generator** — generate full Goldberg emulator configs with achievements, DLCs, stats, and icons.  
-- **Cloud Saves** — Steam userdata save backup/restore. Scans `Steam/userdata/<steam32id>/` for all games with saves, lets you back up the `remote/` folder to any destination, and restore it back with one click (automatic safety backup before overwrite).  
-- **VDF Key Extractor** — extract depot decryption keys from Steam's config.vdf.  
-- Lua/manifest processing, AppList management, and library tools all accessible from buttons.  
-- Full settings dialog where you can edit, delete, export, and import all settings.  
-- **11+ themes** including Dracula, Nord, Cyberpunk, and more.  
-- **System tray icon** for quick show/hide and exit.  
-- **Multi-language support** — switch between English and Portuguese in Settings (more locales can be added).  
-- Log output shown in the window so you can see what's happening.  
-- Any prompts that would normally appear in the terminal show up as dialog boxes instead.
-
-The CLI version (`Main.py` / `SteaMidra.exe`) still works exactly the same as before.
+---
 
 ## What SteaMidra can do
 
@@ -145,19 +77,6 @@ See [CHANGELOG.md](CHANGELOG.md) for what changed in the latest update.
 
 [DLC Unlockers](docs/dlc_unlockers/README.md) – Using DLC unlockers (CreamInstaller-style).
 
-## Requirements
-
-`requirements.txt` covers everything: CLI, GUI (PyQt6), online-fix (Selenium), and Tor fallback.
-
-**Install with two commands:**
-```batch
-pip install -r requirements.txt
-pip install steam==1.4.4 --no-deps
-```
-
-The second command is needed because `steam==1.4.4` has a stale `urllib3<2` constraint that conflicts with Selenium 4.x. Steam only uses `requests` at runtime and works perfectly with urllib3 2.x — `--no-deps` simply skips the outdated constraint check.
-
-More details in [INSTALL_DEPENDENCIES.md](INSTALL_DEPENDENCIES.md).
 
 ## Troubleshooting
 
